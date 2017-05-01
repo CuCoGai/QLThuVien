@@ -1,0 +1,9 @@
+c:\users\administrator\documents\visual studio 2015\Projects\QLTV\QLTV\bin\Debug\QLTV.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\QLTV\QLTV\bin\Debug\QLTV.exe
+c:\users\administrator\documents\visual studio 2015\Projects\QLTV\QLTV\bin\Debug\QLTV.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.FormQLTV.resources
+c:\users\administrator\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.exe
+c:\users\administrator\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.pdb
