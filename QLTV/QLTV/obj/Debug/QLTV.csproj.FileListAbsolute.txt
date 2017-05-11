@@ -7,3 +7,7 @@ c:\users\administrator\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug
 c:\users\administrator\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
 c:\users\administrator\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.exe
 c:\users\administrator\documents\visual studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.DangNhap.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.ThongKe.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.TimKiem.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.QuanLyMuonTra.resources
