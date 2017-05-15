@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QLTV
 {
-    public partial class FormQLTV : Form
+    public partial class UpdateNhanvien : Form
     {
-        public FormQLTV()
+        public UpdateNhanvien()
         {
             InitializeComponent();
-        }
-
-        private void FormQLTV_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

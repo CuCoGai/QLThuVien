@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLTV.EF;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace QLTV
         public DangNhap()
         {
             InitializeComponent();
+        }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+            ModelQLTV model = new ModelQLTV();
+            if(txtUsername.Text)
         }
     }
 }

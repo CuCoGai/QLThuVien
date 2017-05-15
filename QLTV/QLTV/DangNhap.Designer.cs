@@ -32,8 +32,8 @@
             this.lbPassword = new System.Windows.Forms.Label();
             this.btnDangnhap = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.tbUsername = new System.Windows.Forms.TextBox();
-            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbUsername
@@ -72,33 +72,34 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             // 
-            // tbUsername
+            // txtUsername
             // 
-            this.tbUsername.Location = new System.Drawing.Point(106, 35);
-            this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(201, 20);
-            this.tbUsername.TabIndex = 4;
+            this.txtUsername.Location = new System.Drawing.Point(106, 35);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(201, 20);
+            this.txtUsername.TabIndex = 4;
             // 
-            // tbPassword
+            // txtPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(106, 76);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(201, 20);
-            this.tbPassword.TabIndex = 5;
+            this.txtPassword.Location = new System.Drawing.Point(106, 76);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(201, 20);
+            this.txtPassword.TabIndex = 5;
             // 
             // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(365, 201);
-            this.Controls.Add(this.tbPassword);
-            this.Controls.Add(this.tbUsername);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangnhap);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbUsername);
             this.Name = "DangNhap";
             this.Text = "DangNhap";
+            this.Load += new System.EventHandler(this.DangNhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,7 +111,7 @@
         private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.Button btnDangnhap;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.TextBox tbUsername;
-        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
     }
 }
