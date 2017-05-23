@@ -46,12 +46,12 @@ namespace QLTV
             this.Hide();
         }
 
-        private void updateSáchToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmUpdateSach f = new frmUpdateSach();
-            f.Show();
-            this.Hide();
-        }
+        //private void updateSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    frmUpdateSach f = new frmUpdateSach();
+        //    f.Show();
+        //    this.Hide();
+        //}
 
         private void trảSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -86,6 +86,14 @@ namespace QLTV
             frmThongKe f = new frmThongKe();
             f.Show();
             this.Hide();
+        }
+
+        private void menu_login_Click(object sender, EventArgs e)
+        {
+            frm_login frm = new frm_login();
+            frm.Show();
+            Hide();
+
         }
     }
 }

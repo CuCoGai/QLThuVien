@@ -1,6 +1,6 @@
 ﻿namespace QLTV
 {
-    partial class DangNhap
+    partial class frm_login
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.lbUsername = new System.Windows.Forms.Label();
             this.lbPassword = new System.Windows.Forms.Label();
-            this.btnDangnhap = new System.Windows.Forms.Button();
+            this.btn_Dangnhap = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -54,14 +54,15 @@
             this.lbPassword.TabIndex = 1;
             this.lbPassword.Text = "PassWord";
             // 
-            // btnDangnhap
+            // btn_Dangnhap
             // 
-            this.btnDangnhap.Location = new System.Drawing.Point(106, 137);
-            this.btnDangnhap.Name = "btnDangnhap";
-            this.btnDangnhap.Size = new System.Drawing.Size(81, 28);
-            this.btnDangnhap.TabIndex = 2;
-            this.btnDangnhap.Text = "Đăng Nhập";
-            this.btnDangnhap.UseVisualStyleBackColor = true;
+            this.btn_Dangnhap.Location = new System.Drawing.Point(106, 137);
+            this.btn_Dangnhap.Name = "btn_Dangnhap";
+            this.btn_Dangnhap.Size = new System.Drawing.Size(81, 28);
+            this.btn_Dangnhap.TabIndex = 2;
+            this.btn_Dangnhap.Text = "Đăng Nhập";
+            this.btn_Dangnhap.UseVisualStyleBackColor = true;
+            this.btn_Dangnhap.Click += new System.EventHandler(this.btn_Dangnhap_Click);
             // 
             // btnThoat
             // 
@@ -86,7 +87,7 @@
             this.txtPassword.Size = new System.Drawing.Size(201, 20);
             this.txtPassword.TabIndex = 5;
             // 
-            // DangNhap
+            // frm_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -94,10 +95,10 @@
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnDangnhap);
+            this.Controls.Add(this.btn_Dangnhap);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbUsername);
-            this.Name = "DangNhap";
+            this.Name = "frm_login";
             this.Text = "DangNhap";
             this.Load += new System.EventHandler(this.DangNhap_Load);
             this.ResumeLayout(false);
@@ -109,7 +110,7 @@
 
         private System.Windows.Forms.Label lbUsername;
         private System.Windows.Forms.Label lbPassword;
-        private System.Windows.Forms.Button btnDangnhap;
+        private System.Windows.Forms.Button btn_Dangnhap;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword;

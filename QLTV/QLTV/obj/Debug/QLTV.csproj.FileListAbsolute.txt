@@ -11,3 +11,20 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QLTV\QLTV\obj\Debug
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.ThongKe.resources
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.TimKiem.resources
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.QuanLyMuonTra.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\bin\Debug\QLTV.exe.config
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.exe
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.pdb
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.ThongKe.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.TimKiem.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.FormQLTV.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.QuanLyMuonTra.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\bin\Debug\QLTV.exe
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\bin\Debug\QLTV.pdb
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.frm_login.resources

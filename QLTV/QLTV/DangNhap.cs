@@ -11,17 +11,30 @@ using System.Windows.Forms;
 
 namespace QLTV
 {
-    public partial class DangNhap : Form
+    public partial class frm_login : Form
     {
-        public DangNhap()
+        ModelQLTV db = new ModelQLTV();
+        public frm_login()
         {
             InitializeComponent();
         }
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
-            ModelQLTV model = new ModelQLTV();
-            if(txtUsername.Text)
+            ModelQLTV db = new ModelQLTV();
+            this.AcceptButton = btn_Dangnhap;
+        }
+        private void disconnect()
+        {
+            //ngắt kết nối
+            db.Dispose();//giải phóng tài nguyên
+           db = null;//hủy đối tượng
+
+        }
+
+        private void btn_Dangnhap_Click(object sender, EventArgs e)
+        {
+            db.Thuthus.Single();
         }
     }
 }
