@@ -31,7 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.quảnLýMượnTrảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trảSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.qlnv_tool = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_login = new System.Windows.Forms.ToolStripMenuItem();
             this.ctrlMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýDanhMụcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mượnSáchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,23 +68,31 @@
             // quảnLýMượnTrảToolStripMenuItem
             // 
             this.quảnLýMượnTrảToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.trảSáchToolStripMenuItem,
+            this.qlnv_tool,
             this.ctrlMToolStripMenuItem});
             this.quảnLýMượnTrảToolStripMenuItem.Name = "quảnLýMượnTrảToolStripMenuItem";
             this.quảnLýMượnTrảToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.quảnLýMượnTrảToolStripMenuItem.Text = "Nhân Viên";
             // 
-            // trảSáchToolStripMenuItem
+            // qlnv_tool
             // 
-            this.trảSáchToolStripMenuItem.Name = "trảSáchToolStripMenuItem";
-            this.trảSáchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.trảSáchToolStripMenuItem.Text = "New ";
-            this.trảSáchToolStripMenuItem.Click += new System.EventHandler(this.trảSáchToolStripMenuItem_Click);
+            this.qlnv_tool.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menu_login});
+            this.qlnv_tool.Name = "qlnv_tool";
+            this.qlnv_tool.Size = new System.Drawing.Size(167, 22);
+            this.qlnv_tool.Text = "Quản lí nhân viên";
+            // 
+            // menu_login
+            // 
+            this.menu_login.Name = "menu_login";
+            this.menu_login.Size = new System.Drawing.Size(152, 22);
+            this.menu_login.Text = "Login";
+            this.menu_login.Click += new System.EventHandler(this.menu_login_Click);
             // 
             // ctrlMToolStripMenuItem
             // 
             this.ctrlMToolStripMenuItem.Name = "ctrlMToolStripMenuItem";
-            this.ctrlMToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ctrlMToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.ctrlMToolStripMenuItem.Text = "LogOut";
             this.ctrlMToolStripMenuItem.Click += new System.EventHandler(this.ctrlMToolStripMenuItem_Click);
             // 
@@ -124,7 +133,6 @@
             this.updateSáchToolStripMenuItem.Name = "updateSáchToolStripMenuItem";
             this.updateSáchToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.updateSáchToolStripMenuItem.Text = "Update Sách";
-            this.updateSáchToolStripMenuItem.Click += new System.EventHandler(this.updateSáchToolStripMenuItem_Click);
             // 
             // tìmKiếmThôngTinToolStripMenuItem
             // 
@@ -208,7 +216,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem quảnLýMượnTrảToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem trảSáchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem qlnv_tool;
         private System.Windows.Forms.ToolStripMenuItem ctrlMToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLýDanhMụcToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tìmKiếmThôngTinToolStripMenuItem;
@@ -223,6 +231,7 @@
         private System.Windows.Forms.ToolStripMenuItem tìmKiếmSáchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateSáchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tìmKiếmTácGiảToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menu_login;
     }
 }
 

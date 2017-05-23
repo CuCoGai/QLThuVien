@@ -26,3 +26,26 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QLTV\QLTV\obj\Debug
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.frmUpdateDocgia.resources
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.frmUpdateNhanvien.resources
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\QLTV\QLTV\obj\Debug\QLTV.frmUpdateSach.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\bin\Debug\QLTV.exe.config
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.exe
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.pdb
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\bin\Debug\QLTV.exe
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\bin\Debug\QLTV.pdb
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.frmDangNhap.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.frmThongKe.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.frmTimKiem.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.frmQLTV.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.frmQuanLyMuonTra.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.frmUpdateDocgia.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.frmUpdateNhanvien.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.frmUpdateSach.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.frm_themnv.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.Sưa_NV.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.frm_login.resources

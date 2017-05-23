@@ -72,11 +72,29 @@
     <Compile Include="EF\Sach.cs" />
     <Compile Include="EF\sysdiagram.cs" />
     <Compile Include="EF\Thuthu.cs" />
+    <Compile Include="Login_AD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_AD.Designer.cs">
+      <DependentUpon>Login_AD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sưa_NV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sưa_NV.Designer.cs">
+      <DependentUpon>Sưa_NV.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ThongKe.Designer.cs">
       <DependentUpon>ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thêm_NV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thêm_NV.Designer.cs">
+      <DependentUpon>Thêm_NV.cs</DependentUpon>
     </Compile>
     <Compile Include="TimKiem.cs">
       <SubType>Form</SubType>
@@ -119,8 +137,17 @@
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login_AD.resx">
+      <DependentUpon>Login_AD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sưa_NV.resx">
+      <DependentUpon>Sưa_NV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThongKe.resx">
       <DependentUpon>ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thêm_NV.resx">
+      <DependentUpon>Thêm_NV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TimKiem.resx">
       <DependentUpon>TimKiem.cs</DependentUpon>
@@ -150,6 +177,7 @@
     <EmbeddedResource Include="UpdateSach.resx">
       <DependentUpon>UpdateSach.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

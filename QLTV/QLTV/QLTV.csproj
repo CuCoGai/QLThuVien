@@ -72,6 +72,12 @@
     <Compile Include="EF\Sach.cs" />
     <Compile Include="EF\sysdiagram.cs" />
     <Compile Include="EF\Thuthu.cs" />
+    <Compile Include="Resources\NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
