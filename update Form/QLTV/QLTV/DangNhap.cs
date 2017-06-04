@@ -13,7 +13,7 @@ namespace QLTV
 {
     public partial class frmDangNhap : Form
     {
-        ModelQLTV context = new ModelQLTV();
+        QLTVModels context = new QLTVModels();
         public frmDangNhap()
         {
             InitializeComponent();

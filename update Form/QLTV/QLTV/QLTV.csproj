@@ -66,9 +66,9 @@
     <Compile Include="EF\Dangkycabiet.cs" />
     <Compile Include="EF\Docgia.cs" />
     <Compile Include="EF\Khosach.cs" />
-    <Compile Include="EF\ModelQLTV.cs" />
     <Compile Include="EF\Muontra.cs" />
     <Compile Include="EF\Nhaxuatban.cs" />
+    <Compile Include="EF\QLTVModels.cs" />
     <Compile Include="EF\Sach.cs" />
     <Compile Include="EF\sysdiagram.cs" />
     <Compile Include="EF\Thuthu.cs" />

@@ -48,5 +48,10 @@ namespace QLTV
         {
             Application.Exit();
         }
+
+        private void trảSáchToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

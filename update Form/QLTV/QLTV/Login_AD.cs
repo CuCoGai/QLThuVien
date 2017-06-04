@@ -13,7 +13,7 @@ namespace QLTV
 {
     public partial class frm_login : Form
     {
-        ModelQLTV db = new ModelQLTV();
+        QLTVModels db = new QLTVModels();
         public frm_login()
         {
             InitializeComponent();
@@ -26,7 +26,7 @@ namespace QLTV
 
         private void frm_login_Load(object sender, EventArgs e)
         {
-            ModelQLTV db = new ModelQLTV();
+            QLTVModels db = new QLTVModels();
             this.AcceptButton = btnDangnhap;
         }
 

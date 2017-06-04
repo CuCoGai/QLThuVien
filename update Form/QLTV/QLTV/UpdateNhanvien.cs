@@ -13,7 +13,7 @@ namespace QLTV
 {
     public partial class frmUpdateNhanvien : Form
     {
-        ModelQLTV db = new ModelQLTV();
+        QLTVModels db = new QLTVModels();
         DataGridView dt;
         public frmUpdateNhanvien()
         {
@@ -35,7 +35,7 @@ namespace QLTV
         }
         public void load()
         {
-            ModelQLTV db = new ModelQLTV();
+            QLTVModels db = new QLTVModels();
             cmb_gioitinh.Items.Clear();
             cmb_gioitinh.Items.Add("Nam");
             cmb_gioitinh.Items.Add("Nữ");

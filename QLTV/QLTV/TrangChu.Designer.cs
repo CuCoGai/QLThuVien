@@ -111,7 +111,7 @@
             this.mượnSáchToolStripMenuItem2,
             this.trảSáchToolStripMenuItem2});
             this.mượnSáchToolStripMenuItem1.Name = "mượnSáchToolStripMenuItem1";
-            this.mượnSáchToolStripMenuItem1.Size = new System.Drawing.Size(171, 22);
+            this.mượnSáchToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.mượnSáchToolStripMenuItem1.Text = "Quản Lý Mượn Trả";
             // 
             // mượnSáchToolStripMenuItem2
@@ -129,13 +129,14 @@
             // trảSáchToolStripMenuItem1
             // 
             this.trảSáchToolStripMenuItem1.Name = "trảSáchToolStripMenuItem1";
-            this.trảSáchToolStripMenuItem1.Size = new System.Drawing.Size(171, 22);
+            this.trảSáchToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
             this.trảSáchToolStripMenuItem1.Text = "Update";
+            this.trảSáchToolStripMenuItem1.Click += new System.EventHandler(this.trảSáchToolStripMenuItem1_Click);
             // 
             // tìmKiếmSáchToolStripMenuItem
             // 
             this.tìmKiếmSáchToolStripMenuItem.Name = "tìmKiếmSáchToolStripMenuItem";
-            this.tìmKiếmSáchToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.tìmKiếmSáchToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.tìmKiếmSáchToolStripMenuItem.Text = "Tìm Kiếm Sách";
             // 
             // tl_docgia

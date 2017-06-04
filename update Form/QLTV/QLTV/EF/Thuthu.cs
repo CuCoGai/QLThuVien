@@ -22,6 +22,10 @@ namespace QLTV.EF
         [StringLength(100)]
         public string ten { get; set; }
 
+        public bool? gioitinh { get; set; }
+
+        public int? status { get; set; }
+
         [StringLength(100)]
         public string diachi { get; set; }
 
@@ -40,9 +44,6 @@ namespace QLTV.EF
         [StringLength(10)]
         public string matkhau { get; set; }
 
-        public bool? gioitinh { get; set; }
-       
-        public int? status { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Muontra> Muontras { get; set; }

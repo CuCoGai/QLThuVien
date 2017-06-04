@@ -59,7 +59,7 @@
             this.lbTensach = new System.Windows.Forms.Label();
             this.lbMaSach = new System.Windows.Forms.Label();
             this.tabTraSach = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvTraSach = new System.Windows.Forms.DataGridView();
             this.grbThucHienTraSach = new System.Windows.Forms.GroupBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -70,7 +70,7 @@
             this.btnThoat1 = new System.Windows.Forms.Button();
             this.btnLoadDS = new System.Windows.Forms.Button();
             this.btnTraSach = new System.Windows.Forms.Button();
-            this.lbSoLuongMuon1 = new System.Windows.Forms.Label();
+            this.lbSoLuongTra = new System.Windows.Forms.Label();
             this.lbNgaytra1 = new System.Windows.Forms.Label();
             this.lbNgayhentra = new System.Windows.Forms.Label();
             this.lbNgaymuon1 = new System.Windows.Forms.Label();
@@ -83,7 +83,7 @@
             this.grbChomuon.SuspendLayout();
             this.grbThongtinsach.SuspendLayout();
             this.tabTraSach.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTraSach)).BeginInit();
             this.grbThucHienTraSach.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -360,7 +360,7 @@
             // 
             // tabTraSach
             // 
-            this.tabTraSach.Controls.Add(this.dataGridView1);
+            this.tabTraSach.Controls.Add(this.dgvTraSach);
             this.tabTraSach.Controls.Add(this.grbThucHienTraSach);
             this.tabTraSach.Location = new System.Drawing.Point(4, 22);
             this.tabTraSach.Name = "tabTraSach";
@@ -369,14 +369,15 @@
             this.tabTraSach.TabIndex = 1;
             this.tabTraSach.Text = "Bảng Trả Sách";
             this.tabTraSach.UseVisualStyleBackColor = true;
+            this.tabTraSach.Click += new System.EventHandler(this.tabTraSach_Click);
             // 
-            // dataGridView1
+            // dgvTraSach
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 239);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(874, 226);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvTraSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTraSach.Location = new System.Drawing.Point(3, 239);
+            this.dgvTraSach.Name = "dgvTraSach";
+            this.dgvTraSach.Size = new System.Drawing.Size(874, 226);
+            this.dgvTraSach.TabIndex = 1;
             // 
             // grbThucHienTraSach
             // 
@@ -389,7 +390,7 @@
             this.grbThucHienTraSach.Controls.Add(this.btnThoat1);
             this.grbThucHienTraSach.Controls.Add(this.btnLoadDS);
             this.grbThucHienTraSach.Controls.Add(this.btnTraSach);
-            this.grbThucHienTraSach.Controls.Add(this.lbSoLuongMuon1);
+            this.grbThucHienTraSach.Controls.Add(this.lbSoLuongTra);
             this.grbThucHienTraSach.Controls.Add(this.lbNgaytra1);
             this.grbThucHienTraSach.Controls.Add(this.lbNgayhentra);
             this.grbThucHienTraSach.Controls.Add(this.lbNgaymuon1);
@@ -471,14 +472,14 @@
             this.btnTraSach.Text = "Trả Sách";
             this.btnTraSach.UseVisualStyleBackColor = true;
             // 
-            // lbSoLuongMuon1
+            // lbSoLuongTra
             // 
-            this.lbSoLuongMuon1.AutoSize = true;
-            this.lbSoLuongMuon1.Location = new System.Drawing.Point(429, 125);
-            this.lbSoLuongMuon1.Name = "lbSoLuongMuon1";
-            this.lbSoLuongMuon1.Size = new System.Drawing.Size(83, 13);
-            this.lbSoLuongMuon1.TabIndex = 5;
-            this.lbSoLuongMuon1.Text = "Số Lượng Mượn";
+            this.lbSoLuongTra.AutoSize = true;
+            this.lbSoLuongTra.Location = new System.Drawing.Point(429, 125);
+            this.lbSoLuongTra.Name = "lbSoLuongTra";
+            this.lbSoLuongTra.Size = new System.Drawing.Size(72, 13);
+            this.lbSoLuongTra.TabIndex = 5;
+            this.lbSoLuongTra.Text = "Số Lượng Trả";
             // 
             // lbNgaytra1
             // 
@@ -538,6 +539,7 @@
             this.Controls.Add(this.tcrMuonSach);
             this.Name = "frmQuanLyMuonTra";
             this.Text = "Quản Lý Mượn- Trả Sách";
+            this.Load += new System.EventHandler(this.frmQuanLyMuonTra_Load);
             this.tcrMuonSach.ResumeLayout(false);
             this.tabMuonSach.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangMuonSach)).EndInit();
@@ -546,7 +548,7 @@
             this.grbThongtinsach.ResumeLayout(false);
             this.grbThongtinsach.PerformLayout();
             this.tabTraSach.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTraSach)).EndInit();
             this.grbThucHienTraSach.ResumeLayout(false);
             this.grbThucHienTraSach.PerformLayout();
             this.ResumeLayout(false);
@@ -590,14 +592,14 @@
         private System.Windows.Forms.Button btnThoat1;
         private System.Windows.Forms.Button btnLoadDS;
         private System.Windows.Forms.Button btnTraSach;
-        private System.Windows.Forms.Label lbSoLuongMuon1;
+        private System.Windows.Forms.Label lbSoLuongTra;
         private System.Windows.Forms.Label lbNgaytra1;
         private System.Windows.Forms.Label lbNgayhentra;
         private System.Windows.Forms.Label lbNgaymuon1;
         private System.Windows.Forms.Label lbMasach1;
         private System.Windows.Forms.Label lbMadocgia1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvTraSach;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;

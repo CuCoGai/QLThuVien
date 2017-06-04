@@ -12,7 +12,7 @@ namespace QLTV
 {
     public partial class frm_themnv : Form
     {
-        ModelQLTV db = new ModelQLTV();
+        QLTVModels db = new QLTVModels();
         public frm_themnv()
         {
             InitializeComponent();
@@ -35,7 +35,7 @@ namespace QLTV
 
         private void btn_them_Click(object sender, EventArgs e)
         {
-            ModelQLTV db = new ModelQLTV();
+            QLTVModels db = new QLTVModels();
             Thuthu tt = new Thuthu();
             tt.ma = txtMa.Text;
             tt.ten = txtTen.Text;

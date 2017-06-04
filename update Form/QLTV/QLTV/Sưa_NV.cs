@@ -14,7 +14,7 @@ namespace QLTV
    
     public partial class Sưa_NV : Form
     {
-        ModelQLTV db = new ModelQLTV();
+        QLTVModels db = new QLTVModels();
         public Sưa_NV()
         {
             InitializeComponent();
