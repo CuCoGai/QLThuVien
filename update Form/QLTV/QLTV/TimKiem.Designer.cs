@@ -85,19 +85,22 @@
             // 
             // txtTKDG
             // 
-            this.txtTKDG.Location = new System.Drawing.Point(152, 24);
+            this.txtTKDG.Location = new System.Drawing.Point(66, 24);
             this.txtTKDG.Name = "txtTKDG";
             this.txtTKDG.Size = new System.Drawing.Size(547, 20);
             this.txtTKDG.TabIndex = 1;
+            this.txtTKDG.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtTKDG_MouseClick);
+            this.txtTKDG.TextChanged += new System.EventHandler(this.txtTKDG_TextChanged);
             // 
             // btnTKDG
             // 
-            this.btnTKDG.Location = new System.Drawing.Point(21, 15);
+            this.btnTKDG.Location = new System.Drawing.Point(657, 15);
             this.btnTKDG.Name = "btnTKDG";
             this.btnTKDG.Size = new System.Drawing.Size(102, 37);
             this.btnTKDG.TabIndex = 0;
             this.btnTKDG.Text = "Tìm Kiếm";
             this.btnTKDG.UseVisualStyleBackColor = true;
+            this.btnTKDG.Click += new System.EventHandler(this.btnTKDG_Click);
             // 
             // tpTKSach
             // 
@@ -122,19 +125,20 @@
             // 
             // txtTKS
             // 
-            this.txtTKS.Location = new System.Drawing.Point(153, 24);
+            this.txtTKS.Location = new System.Drawing.Point(75, 24);
             this.txtTKS.Name = "txtTKS";
             this.txtTKS.Size = new System.Drawing.Size(547, 20);
             this.txtTKS.TabIndex = 4;
             // 
             // btnTKS
             // 
-            this.btnTKS.Location = new System.Drawing.Point(22, 15);
+            this.btnTKS.Location = new System.Drawing.Point(666, 15);
             this.btnTKS.Name = "btnTKS";
             this.btnTKS.Size = new System.Drawing.Size(102, 37);
             this.btnTKS.TabIndex = 3;
             this.btnTKS.Text = "Tìm Kiếm";
             this.btnTKS.UseVisualStyleBackColor = true;
+            this.btnTKS.Click += new System.EventHandler(this.btnTKS_Click);
             // 
             // tpTKtacgia
             // 
@@ -159,19 +163,20 @@
             // 
             // txtTKTG
             // 
-            this.txtTKTG.Location = new System.Drawing.Point(153, 24);
+            this.txtTKTG.Location = new System.Drawing.Point(69, 24);
             this.txtTKTG.Name = "txtTKTG";
             this.txtTKTG.Size = new System.Drawing.Size(547, 20);
             this.txtTKTG.TabIndex = 4;
             // 
             // btnTKTG
             // 
-            this.btnTKTG.Location = new System.Drawing.Point(22, 15);
+            this.btnTKTG.Location = new System.Drawing.Point(670, 15);
             this.btnTKTG.Name = "btnTKTG";
             this.btnTKTG.Size = new System.Drawing.Size(102, 37);
             this.btnTKTG.TabIndex = 3;
             this.btnTKTG.Text = "Tìm Kiếm";
             this.btnTKTG.UseVisualStyleBackColor = true;
+            this.btnTKTG.Click += new System.EventHandler(this.btnTKTG_Click);
             // 
             // btnThoat
             // 
