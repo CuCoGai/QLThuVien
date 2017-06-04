@@ -49,3 +49,6 @@ C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debu
 C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.frm_themnv.resources
 C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.Sưa_NV.resources
 C:\Users\Administrator\Documents\GitHub\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.frm_login.resources
+E:\HVKTQS\KI 2 2017\Thực tập nhóm_TH13\QLThuVien\update Form\QLTV\QLTV\bin\Debug\QLTV.exe.config
+E:\HVKTQS\KI 2 2017\Thực tập nhóm_TH13\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.exe
+E:\HVKTQS\KI 2 2017\Thực tập nhóm_TH13\QLThuVien\update Form\QLTV\QLTV\obj\Debug\QLTV.pdb
