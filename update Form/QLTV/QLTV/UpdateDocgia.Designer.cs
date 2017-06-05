@@ -35,74 +35,82 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.dgvUpdateDocgia = new System.Windows.Forms.DataGridView();
             this.dtpNgaysinh = new System.Windows.Forms.DateTimePicker();
-            this.txtGhichu = new System.Windows.Forms.TextBox();
             this.txtDonvi = new System.Windows.Forms.TextBox();
-            this.txtGioitinh = new System.Windows.Forms.TextBox();
             this.txtChucvu = new System.Windows.Forms.TextBox();
             this.txtTen = new System.Windows.Forms.TextBox();
             this.txtMa = new System.Windows.Forms.TextBox();
-            this.lbGhichu = new System.Windows.Forms.Label();
             this.lbGioitinh = new System.Windows.Forms.Label();
             this.lbChucvu = new System.Windows.Forms.Label();
             this.lbDonvi = new System.Windows.Forms.Label();
             this.lbNgaysinh = new System.Windows.Forms.Label();
             this.lbTen = new System.Windows.Forms.Label();
             this.lbMa = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUpdateDocgia)).BeginInit();
             this.SuspendLayout();
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(508, 382);
+            this.btnThoat.Location = new System.Drawing.Point(507, 455);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(86, 32);
             this.btnThoat.TabIndex = 47;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(380, 382);
+            this.btnUpdate.Location = new System.Drawing.Point(379, 455);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(86, 32);
             this.btnUpdate.TabIndex = 46;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(251, 382);
+            this.btnXoa.Location = new System.Drawing.Point(250, 455);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(86, 32);
             this.btnXoa.TabIndex = 45;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(131, 382);
+            this.btnSua.Location = new System.Drawing.Point(130, 455);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(86, 32);
             this.btnSua.TabIndex = 44;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(12, 382);
+            this.btnThem.Location = new System.Drawing.Point(11, 455);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(86, 32);
             this.btnThem.TabIndex = 43;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // dgvUpdateDocgia
             // 
             this.dgvUpdateDocgia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUpdateDocgia.Location = new System.Drawing.Point(7, 155);
+            this.dgvUpdateDocgia.Location = new System.Drawing.Point(7, 173);
             this.dgvUpdateDocgia.Name = "dgvUpdateDocgia";
-            this.dgvUpdateDocgia.Size = new System.Drawing.Size(607, 186);
+            this.dgvUpdateDocgia.Size = new System.Drawing.Size(607, 265);
             this.dgvUpdateDocgia.TabIndex = 42;
+            this.dgvUpdateDocgia.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUpdateDocgia_CellClick);
             // 
             // dtpNgaysinh
             // 
@@ -111,26 +119,12 @@
             this.dtpNgaysinh.Size = new System.Drawing.Size(181, 20);
             this.dtpNgaysinh.TabIndex = 41;
             // 
-            // txtGhichu
-            // 
-            this.txtGhichu.Location = new System.Drawing.Point(380, 81);
-            this.txtGhichu.Name = "txtGhichu";
-            this.txtGhichu.Size = new System.Drawing.Size(193, 20);
-            this.txtGhichu.TabIndex = 40;
-            // 
             // txtDonvi
             // 
             this.txtDonvi.Location = new System.Drawing.Point(380, 13);
             this.txtDonvi.Name = "txtDonvi";
             this.txtDonvi.Size = new System.Drawing.Size(193, 20);
             this.txtDonvi.TabIndex = 39;
-            // 
-            // txtGioitinh
-            // 
-            this.txtGioitinh.Location = new System.Drawing.Point(90, 118);
-            this.txtGioitinh.Name = "txtGioitinh";
-            this.txtGioitinh.Size = new System.Drawing.Size(181, 20);
-            this.txtGioitinh.TabIndex = 38;
             // 
             // txtChucvu
             // 
@@ -152,15 +146,6 @@
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(181, 20);
             this.txtMa.TabIndex = 33;
-            // 
-            // lbGhichu
-            // 
-            this.lbGhichu.AutoSize = true;
-            this.lbGhichu.Location = new System.Drawing.Point(312, 84);
-            this.lbGhichu.Name = "lbGhichu";
-            this.lbGhichu.Size = new System.Drawing.Size(44, 13);
-            this.lbGhichu.TabIndex = 32;
-            this.lbGhichu.Text = "Ghi chú";
             // 
             // lbGioitinh
             // 
@@ -216,11 +201,59 @@
             this.lbMa.TabIndex = 24;
             this.lbMa.Text = "Mã";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.comboBox1.Location = new System.Drawing.Point(90, 120);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(180, 21);
+            this.comboBox1.TabIndex = 48;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(312, 128);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 51;
+            this.label2.Text = "Hạn thẻ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(298, 91);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 13);
+            this.label3.TabIndex = 52;
+            this.label3.Text = "Ngày cấp thẻ";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(380, 84);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(192, 20);
+            this.dateTimePicker1.TabIndex = 53;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(379, 121);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(193, 20);
+            this.dateTimePicker2.TabIndex = 54;
+            // 
             // frmUpdateDocgia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 461);
+            this.ClientSize = new System.Drawing.Size(623, 499);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnXoa);
@@ -228,13 +261,10 @@
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.dgvUpdateDocgia);
             this.Controls.Add(this.dtpNgaysinh);
-            this.Controls.Add(this.txtGhichu);
             this.Controls.Add(this.txtDonvi);
-            this.Controls.Add(this.txtGioitinh);
             this.Controls.Add(this.txtChucvu);
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.txtMa);
-            this.Controls.Add(this.lbGhichu);
             this.Controls.Add(this.lbGioitinh);
             this.Controls.Add(this.lbChucvu);
             this.Controls.Add(this.lbDonvi);
@@ -243,6 +273,7 @@
             this.Controls.Add(this.lbMa);
             this.Name = "frmUpdateDocgia";
             this.Text = "Quản Lý Độc Giả";
+            this.Load += new System.EventHandler(this.frmUpdateDocgia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUpdateDocgia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -258,18 +289,20 @@
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.DataGridView dgvUpdateDocgia;
         private System.Windows.Forms.DateTimePicker dtpNgaysinh;
-        private System.Windows.Forms.TextBox txtGhichu;
         private System.Windows.Forms.TextBox txtDonvi;
-        private System.Windows.Forms.TextBox txtGioitinh;
         private System.Windows.Forms.TextBox txtChucvu;
         private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.TextBox txtMa;
-        private System.Windows.Forms.Label lbGhichu;
         private System.Windows.Forms.Label lbGioitinh;
         private System.Windows.Forms.Label lbChucvu;
         private System.Windows.Forms.Label lbDonvi;
         private System.Windows.Forms.Label lbNgaysinh;
         private System.Windows.Forms.Label lbTen;
         private System.Windows.Forms.Label lbMa;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }
