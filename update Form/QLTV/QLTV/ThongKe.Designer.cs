@@ -53,6 +53,7 @@
             this.dgvCapnhatkhosach.Name = "dgvCapnhatkhosach";
             this.dgvCapnhatkhosach.Size = new System.Drawing.Size(873, 269);
             this.dgvCapnhatkhosach.TabIndex = 0;
+            this.dgvCapnhatkhosach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCapnhatkhosach_CellContentClick);
             // 
             // btnUpdate
             // 
@@ -62,6 +63,7 @@
             this.btnUpdate.TabIndex = 1;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnThoat
             // 
@@ -71,6 +73,7 @@
             this.btnThoat.TabIndex = 2;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // frmThongKe
             // 
