@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLThuVienModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Dangkycabiet">
+    <Key>
+      <PropertyRef Name="sodangky" />
+    </Key>
+    <Property Name="sachma" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="sodangky" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ngayvaoso" Type="DateTime" Precision="3" />
+    <Property Name="khoma" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Khosach" Relationship="Self.FK__Dangkycab__khoma__1CF15040" FromRole="Dangkycabiet" ToRole="Khosach" />
+    <NavigationProperty Name="Sach" Relationship="Self.FK__Dangkycab__sachm__1BFD2C07" FromRole="Dangkycabiet" ToRole="Sach" />
+  </EntityType>
+  <EntityType Name="Docgia">
+    <Key>
+      <PropertyRef Name="sothe" />
+    </Key>
+    <Property Name="sothe" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="hoten" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ngaysinh" Type="DateTime" Precision="3" />
+    <Property Name="gioitinh" Type="Boolean" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="donvi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="chucvu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="anh" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ngaycapthe" Type="DateTime" Precision="3" />
+    <Property Name="hanthe" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Muontras" Relationship="Self.FK__Muontra__sothema__1FCDBCEB" FromRole="Docgia" ToRole="Muontra" />
+  </EntityType>
+  <EntityType Name="Khosach">
+    <Key>
+      <PropertyRef Name="ma" />
+    </Key>
+    <Property Name="ma" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ten" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ghichu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Dangkycabiets" Relationship="Self.FK__Dangkycab__khoma__1CF15040" FromRole="Khosach" ToRole="Dangkycabiet" />
+    <NavigationProperty Name="Saches" Relationship="Self.FK__Sach__khoma__173876EA" FromRole="Khosach" ToRole="Sach" />
+  </EntityType>
+  <EntityType Name="Muontra">
+    <Key>
+      <PropertyRef Name="sothutu" />
+    </Key>
+    <Property Name="sothutu" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sothema" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="sachma" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="thuthuma" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ngaymuon" Type="DateTime" Precision="3" />
+    <Property Name="ngaytra" Type="DateTime" Precision="3" />
+    <Property Name="ngayphaitra" Type="DateTime" Precision="3" />
+    <Property Name="tinhtrangmuon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tinhtrangtra" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="soluongmuon" Type="Int32" />
+    <Property Name="soluongtra" Type="Int32" />
+    <NavigationProperty Name="Docgia" Relationship="Self.FK__Muontra__sothema__1FCDBCEB" FromRole="Muontra" ToRole="Docgia" />
+    <NavigationProperty Name="Sach" Relationship="Self.FK__Muontra__sachma__20C1E124" FromRole="Muontra" ToRole="Sach" />
+    <NavigationProperty Name="Thuthu" Relationship="Self.FK__Muontra__thuthum__21B6055D" FromRole="Muontra" ToRole="Thuthu" />
+  </EntityType>
+  <EntityType Name="Nhaxuatban">
+    <Key>
+      <PropertyRef Name="ma" />
+    </Key>
+    <Property Name="ma" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ten" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="diachi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="sodienthoai" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Saches" Relationship="Self.FK__Sach__nhaxuatban__164452B1" FromRole="Nhaxuatban" ToRole="Sach" />
+  </EntityType>
+  <EntityType Name="Sach">
+    <Key>
+      <PropertyRef Name="ma" />
+    </Key>
+    <Property Name="ma" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ten" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="tacgia" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="loaisach" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nhaxuatbanma" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="sotrang" Type="Int32" />
+    <Property Name="solanxuatban" Type="Int32" />
+    <Property Name="soluong" Type="Int32" />
+    <Property Name="noidung" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="giatien" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ngonngu" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="khoma" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Dangkycabiets" Relationship="Self.FK__Dangkycab__sachm__1BFD2C07" FromRole="Sach" ToRole="Dangkycabiet" />
+    <NavigationProperty Name="Khosach" Relationship="Self.FK__Sach__khoma__173876EA" FromRole="Sach" ToRole="Khosach" />
+    <NavigationProperty Name="Muontras" Relationship="Self.FK__Muontra__sachma__20C1E124" FromRole="Sach" ToRole="Muontra" />
+    <NavigationProperty Name="Nhaxuatban" Relationship="Self.FK__Sach__nhaxuatban__164452B1" FromRole="Sach" ToRole="Nhaxuatban" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Thuthu">
+    <Key>
+      <PropertyRef Name="ma" />
+    </Key>
+    <Property Name="ma" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ten" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="diachi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="sodienthoai" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="chucvu" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="tendangnhap" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="matkhau" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="gioitinh" Type="Boolean" />
+    <Property Name="status" Type="Int32" />
+    <NavigationProperty Name="Muontras" Relationship="Self.FK__Muontra__thuthum__21B6055D" FromRole="Thuthu" ToRole="Muontra" />
+  </EntityType>
+  <Association Name="FK__Dangkycab__khoma__1CF15040">
+    <End Role="Khosach" Type="Self.Khosach" Multiplicity="0..1" />
+    <End Role="Dangkycabiet" Type="Self.Dangkycabiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Khosach">
+        <PropertyRef Name="ma" />
+      </Principal>
+      <Dependent Role="Dangkycabiet">
+        <PropertyRef Name="khoma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Dangkycab__sachm__1BFD2C07">
+    <End Role="Sach" Type="Self.Sach" Multiplicity="0..1" />
+    <End Role="Dangkycabiet" Type="Self.Dangkycabiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sach">
+        <PropertyRef Name="ma" />
+      </Principal>
+      <Dependent Role="Dangkycabiet">
+        <PropertyRef Name="sachma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Muontra__sothema__1FCDBCEB">
+    <End Role="Docgia" Type="Self.Docgia" Multiplicity="0..1" />
+    <End Role="Muontra" Type="Self.Muontra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Docgia">
+        <PropertyRef Name="sothe" />
+      </Principal>
+      <Dependent Role="Muontra">
+        <PropertyRef Name="sothema" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sach__khoma__173876EA">
+    <End Role="Khosach" Type="Self.Khosach" Multiplicity="0..1" />
+    <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Khosach">
+        <PropertyRef Name="ma" />
+      </Principal>
+      <Dependent Role="Sach">
+        <PropertyRef Name="khoma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Muontra__sachma__20C1E124">
+    <End Role="Sach" Type="Self.Sach" Multiplicity="0..1" />
+    <End Role="Muontra" Type="Self.Muontra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sach">
+        <PropertyRef Name="ma" />
+      </Principal>
+      <Dependent Role="Muontra">
+        <PropertyRef Name="sachma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Muontra__thuthum__21B6055D">
+    <End Role="Thuthu" Type="Self.Thuthu" Multiplicity="0..1" />
+    <End Role="Muontra" Type="Self.Muontra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Thuthu">
+        <PropertyRef Name="ma" />
+      </Principal>
+      <Dependent Role="Muontra">
+        <PropertyRef Name="thuthuma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sach__nhaxuatban__164452B1">
+    <End Role="Nhaxuatban" Type="Self.Nhaxuatban" Multiplicity="0..1" />
+    <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nhaxuatban">
+        <PropertyRef Name="ma" />
+      </Principal>
+      <Dependent Role="Sach">
+        <PropertyRef Name="nhaxuatbanma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLThuVienEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Dangkycabiets" EntityType="Self.Dangkycabiet" />
+    <EntitySet Name="Docgias" EntityType="Self.Docgia" />
+    <EntitySet Name="Khosaches" EntityType="Self.Khosach" />
+    <EntitySet Name="Muontras" EntityType="Self.Muontra" />
+    <EntitySet Name="Nhaxuatbans" EntityType="Self.Nhaxuatban" />
+    <EntitySet Name="Saches" EntityType="Self.Sach" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Thuthus" EntityType="Self.Thuthu" />
+    <AssociationSet Name="FK__Dangkycab__khoma__1CF15040" Association="Self.FK__Dangkycab__khoma__1CF15040">
+      <End Role="Khosach" EntitySet="Khosaches" />
+      <End Role="Dangkycabiet" EntitySet="Dangkycabiets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Dangkycab__sachm__1BFD2C07" Association="Self.FK__Dangkycab__sachm__1BFD2C07">
+      <End Role="Sach" EntitySet="Saches" />
+      <End Role="Dangkycabiet" EntitySet="Dangkycabiets" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Muontra__sothema__1FCDBCEB" Association="Self.FK__Muontra__sothema__1FCDBCEB">
+      <End Role="Docgia" EntitySet="Docgias" />
+      <End Role="Muontra" EntitySet="Muontras" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sach__khoma__173876EA" Association="Self.FK__Sach__khoma__173876EA">
+      <End Role="Khosach" EntitySet="Khosaches" />
+      <End Role="Sach" EntitySet="Saches" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Muontra__sachma__20C1E124" Association="Self.FK__Muontra__sachma__20C1E124">
+      <End Role="Sach" EntitySet="Saches" />
+      <End Role="Muontra" EntitySet="Muontras" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Muontra__thuthum__21B6055D" Association="Self.FK__Muontra__thuthum__21B6055D">
+      <End Role="Thuthu" EntitySet="Thuthus" />
+      <End Role="Muontra" EntitySet="Muontras" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sach__nhaxuatban__164452B1" Association="Self.FK__Sach__nhaxuatban__164452B1">
+      <End Role="Nhaxuatban" EntitySet="Nhaxuatbans" />
+      <End Role="Sach" EntitySet="Saches" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

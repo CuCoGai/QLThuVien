@@ -66,12 +66,12 @@
     <Compile Include="EF\Dangkycabiet.cs" />
     <Compile Include="EF\Docgia.cs" />
     <Compile Include="EF\Khosach.cs" />
-    <Compile Include="EF\ModelQLTV.cs" />
     <Compile Include="EF\Muontra.cs" />
     <Compile Include="EF\Nhaxuatban.cs" />
     <Compile Include="EF\Sach.cs" />
     <Compile Include="EF\sysdiagram.cs" />
     <Compile Include="EF\Thuthu.cs" />
+    <Compile Include="EF\TVEnti.cs" />
     <Compile Include="Resources\NhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +104,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateDocgia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDocgia.Designer.cs">
+      <DependentUpon>UpdateDocgia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSach.Designer.cs">
+      <DependentUpon>UpdateSach.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +141,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UpdateDocgia.resx">
+      <DependentUpon>UpdateDocgia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSach.resx">
+      <DependentUpon>UpdateSach.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -157,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

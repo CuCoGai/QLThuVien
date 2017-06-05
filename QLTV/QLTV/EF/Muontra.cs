@@ -34,6 +34,10 @@ namespace QLTV.EF
         [StringLength(50)]
         public string tinhtrangtra { get; set; }
 
+        public int? soluongmuon { get; set; }
+
+        public int? soluongtra { get; set; }
+
         public virtual Docgia Docgia { get; set; }
 
         public virtual Sach Sach { get; set; }

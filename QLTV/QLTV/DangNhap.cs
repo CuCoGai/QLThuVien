@@ -1,4 +1,5 @@
-﻿using QLTV.EF;
+﻿
+using QLTV.EF;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,7 @@ namespace QLTV
 {
     public partial class frm_login : Form
     {
-        ModelQLTV db = new ModelQLTV();
+        TVEnti db = new TVEnti();
         public frm_login()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace QLTV
 
         private void DangNhap_Load(object sender, EventArgs e)
         {
-            ModelQLTV db = new ModelQLTV();
+            TVEnti db = new TVEnti();
             this.AcceptButton = btn_Dangnhap;
         }
         private void disconnect()

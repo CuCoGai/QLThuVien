@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLThuVienModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Dangkycabiet">
+    <Key>
+      <PropertyRef Name="sodangky" />
+    </Key>
+    <Property Name="sachma" Type="varchar" MaxLength="10" />
+    <Property Name="sodangky" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ngayvaoso" Type="datetime" />
+    <Property Name="khoma" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Docgia">
+    <Key>
+      <PropertyRef Name="sothe" />
+    </Key>
+    <Property Name="sothe" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="hoten" Type="nvarchar" MaxLength="100" />
+    <Property Name="ngaysinh" Type="datetime" />
+    <Property Name="gioitinh" Type="bit" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="donvi" Type="varchar" MaxLength="50" />
+    <Property Name="chucvu" Type="nvarchar" MaxLength="50" />
+    <Property Name="anh" Type="varchar" MaxLength="100" />
+    <Property Name="ngaycapthe" Type="datetime" />
+    <Property Name="hanthe" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Khosach">
+    <Key>
+      <PropertyRef Name="ma" />
+    </Key>
+    <Property Name="ma" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ten" Type="nvarchar" MaxLength="100" />
+    <Property Name="ghichu" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Muontra">
+    <Key>
+      <PropertyRef Name="sothutu" />
+    </Key>
+    <Property Name="sothutu" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="sothema" Type="varchar" MaxLength="10" />
+    <Property Name="sachma" Type="varchar" MaxLength="10" />
+    <Property Name="thuthuma" Type="varchar" MaxLength="10" />
+    <Property Name="ngaymuon" Type="datetime" />
+    <Property Name="ngaytra" Type="datetime" />
+    <Property Name="ngayphaitra" Type="datetime" />
+    <Property Name="tinhtrangmuon" Type="nvarchar" MaxLength="50" />
+    <Property Name="tinhtrangtra" Type="nvarchar" MaxLength="50" />
+    <Property Name="soluongmuon" Type="int" />
+    <Property Name="soluongtra" Type="int" />
+  </EntityType>
+  <EntityType Name="Nhaxuatban">
+    <Key>
+      <PropertyRef Name="ma" />
+    </Key>
+    <Property Name="ma" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ten" Type="nvarchar" MaxLength="100" />
+    <Property Name="diachi" Type="nvarchar" MaxLength="100" />
+    <Property Name="sodienthoai" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="Sach">
+    <Key>
+      <PropertyRef Name="ma" />
+    </Key>
+    <Property Name="ma" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ten" Type="nvarchar" MaxLength="100" />
+    <Property Name="tacgia" Type="nvarchar" MaxLength="100" />
+    <Property Name="loaisach" Type="nvarchar" MaxLength="50" />
+    <Property Name="nhaxuatbanma" Type="varchar" MaxLength="10" />
+    <Property Name="sotrang" Type="int" />
+    <Property Name="solanxuatban" Type="int" />
+    <Property Name="soluong" Type="int" />
+    <Property Name="noidung" Type="nvarchar" MaxLength="100" />
+    <Property Name="giatien" Type="varchar" MaxLength="20" />
+    <Property Name="ngonngu" Type="nvarchar" MaxLength="20" />
+    <Property Name="khoma" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Thuthu">
+    <Key>
+      <PropertyRef Name="ma" />
+    </Key>
+    <Property Name="ma" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ten" Type="nvarchar" MaxLength="100" />
+    <Property Name="diachi" Type="nvarchar" MaxLength="100" />
+    <Property Name="sodienthoai" Type="varchar" MaxLength="15" />
+    <Property Name="chucvu" Type="nvarchar" MaxLength="20" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="tendangnhap" Type="nvarchar" MaxLength="20" />
+    <Property Name="matkhau" Type="varchar" MaxLength="10" />
+    <Property Name="gioitinh" Type="bit" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <Association Name="FK__Dangkycab__khoma__1CF15040">
+    <End Role="Khosach" Type="Self.Khosach" Multiplicity="0..1" />
+    <End Role="Dangkycabiet" Type="Self.Dangkycabiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Khosach">
+        <PropertyRef Name="ma" />
+      </Principal>
+      <Dependent Role="Dangkycabiet">
+        <PropertyRef Name="khoma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Dangkycab__sachm__1BFD2C07">
+    <End Role="Sach" Type="Self.Sach" Multiplicity="0..1" />
+    <End Role="Dangkycabiet" Type="Self.Dangkycabiet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sach">
+        <PropertyRef Name="ma" />
+      </Principal>
+      <Dependent Role="Dangkycabiet">
+        <PropertyRef Name="sachma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Muontra__sachma__20C1E124">
+    <End Role="Sach" Type="Self.Sach" Multiplicity="0..1" />
+    <End Role="Muontra" Type="Self.Muontra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sach">
+        <PropertyRef Name="ma" />
+      </Principal>
+      <Dependent Role="Muontra">
+        <PropertyRef Name="sachma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Muontra__sothema__1FCDBCEB">
+    <End Role="Docgia" Type="Self.Docgia" Multiplicity="0..1" />
+    <End Role="Muontra" Type="Self.Muontra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Docgia">
+        <PropertyRef Name="sothe" />
+      </Principal>
+      <Dependent Role="Muontra">
+        <PropertyRef Name="sothema" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Muontra__thuthum__21B6055D">
+    <End Role="Thuthu" Type="Self.Thuthu" Multiplicity="0..1" />
+    <End Role="Muontra" Type="Self.Muontra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Thuthu">
+        <PropertyRef Name="ma" />
+      </Principal>
+      <Dependent Role="Muontra">
+        <PropertyRef Name="thuthuma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sach__khoma__173876EA">
+    <End Role="Khosach" Type="Self.Khosach" Multiplicity="0..1" />
+    <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Khosach">
+        <PropertyRef Name="ma" />
+      </Principal>
+      <Dependent Role="Sach">
+        <PropertyRef Name="khoma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sach__nhaxuatban__164452B1">
+    <End Role="Nhaxuatban" Type="Self.Nhaxuatban" Multiplicity="0..1" />
+    <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nhaxuatban">
+        <PropertyRef Name="ma" />
+      </Principal>
+      <Dependent Role="Sach">
+        <PropertyRef Name="nhaxuatbanma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="QLThuVienModelStoreContainer">
+    <EntitySet Name="Dangkycabiet" EntityType="Self.Dangkycabiet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Docgia" EntityType="Self.Docgia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Khosach" EntityType="Self.Khosach" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Muontra" EntityType="Self.Muontra" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Nhaxuatban" EntityType="Self.Nhaxuatban" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sach" EntityType="Self.Sach" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Thuthu" EntityType="Self.Thuthu" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Dangkycab__khoma__1CF15040" Association="Self.FK__Dangkycab__khoma__1CF15040">
+      <End Role="Khosach" EntitySet="Khosach" />
+      <End Role="Dangkycabiet" EntitySet="Dangkycabiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Dangkycab__sachm__1BFD2C07" Association="Self.FK__Dangkycab__sachm__1BFD2C07">
+      <End Role="Sach" EntitySet="Sach" />
+      <End Role="Dangkycabiet" EntitySet="Dangkycabiet" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Muontra__sachma__20C1E124" Association="Self.FK__Muontra__sachma__20C1E124">
+      <End Role="Sach" EntitySet="Sach" />
+      <End Role="Muontra" EntitySet="Muontra" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Muontra__sothema__1FCDBCEB" Association="Self.FK__Muontra__sothema__1FCDBCEB">
+      <End Role="Docgia" EntitySet="Docgia" />
+      <End Role="Muontra" EntitySet="Muontra" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Muontra__thuthum__21B6055D" Association="Self.FK__Muontra__thuthum__21B6055D">
+      <End Role="Thuthu" EntitySet="Thuthu" />
+      <End Role="Muontra" EntitySet="Muontra" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sach__khoma__173876EA" Association="Self.FK__Sach__khoma__173876EA">
+      <End Role="Khosach" EntitySet="Khosach" />
+      <End Role="Sach" EntitySet="Sach" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sach__nhaxuatban__164452B1" Association="Self.FK__Sach__nhaxuatban__164452B1">
+      <End Role="Nhaxuatban" EntitySet="Nhaxuatban" />
+      <End Role="Sach" EntitySet="Sach" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

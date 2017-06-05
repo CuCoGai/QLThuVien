@@ -31,3 +31,5 @@ C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.frm_l
 E:\HVKTQS\KI 2 2017\Thực tập nhóm_TH13\QLThuVien\QLTV\QLTV\bin\Debug\QLTV.exe.config
 E:\HVKTQS\KI 2 2017\Thực tập nhóm_TH13\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.exe
 E:\HVKTQS\KI 2 2017\Thực tập nhóm_TH13\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.pdb
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.UpdateSach.resources
+C:\Users\Administrator\Documents\GitHub\QLThuVien\QLTV\QLTV\obj\Debug\QLTV.UpdateDocGia.resources
